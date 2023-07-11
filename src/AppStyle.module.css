@@ -1,0 +1,268 @@
+.navbarStyle {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding: 0 10rem;
+  gap: 1rem;
+}
+
+.mainDiv {
+  display: flex;
+  flex-direction: column;
+  background-color: #282c34;
+  height: 100%;
+  /* max-height: 100%; */
+  color: #eee;
+  /* align-items: center; */
+  padding: 2rem 0;
+}
+
+.navbarStyle .link {
+  color: #eee;
+  text-decoration: none;
+  font-weight: bold;
+}
+.link {
+  color: #eee;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbarStyle li {
+  flex: 1;
+  text-align: center;
+  position: relative;
+  transition: all 1s ease;
+  z-index: 4;
+  color: #eee;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbarStyle li:hover::after {
+  /* scale: 1.2; */
+  width: 80%;
+  /* padding: 0 3rem; */
+}
+.navbarStyle li::after {
+  /* display: flex; */
+  left: 50%;
+  transform: translateX(-50%);
+  /* justify-content: center; */
+  content: "";
+  position: absolute;
+  /* padding: 0.3rem; */
+  width: 0%;
+  height: 0.3rem;
+  background-color: white;
+  /* left: 0; */
+  bottom: -0.5rem;
+  border-radius: 0.6rem;
+  transition: all 0.3s ease;
+  /* padding: 0 0rem; */
+}
+
+.containerDiv {
+  /* height: 100%; */
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.heading {
+  display: flex;
+  gap: 1rem;
+  /* align-items: center; */
+  font-family: sans-serif;
+  font-size: 1.625rem;
+  font-weight: bold;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.button {
+  width: 145px;
+  color: white !important;
+  border-color: white !important;
+  padding: 0.7rem 1rem !important;
+  border-radius: 0.2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: all 0.15s ease !important;
+}
+.button:hover {
+  transform: translateY(-3px);
+}
+.loginCon {
+  background: #eee !important;
+  width: 40%;
+  padding: 2rem 1rem;
+  border-radius: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: center;
+  transition: all 0.3s ease;
+  /* height: 6rem; */
+}
+.loginHead {
+  display: flex;
+  color: black;
+  justify-content: flex-start;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.625rem;
+  padding-left: 1rem;
+}
+.line {
+  padding: 0.01rem;
+  width: 85%;
+  background: black;
+  /* background-color: black; */
+  /* color: black; */
+  margin: 1rem 2rem 1rem 0;
+  transform: translateY(2px);
+  flex: 1;
+}
+.loginButton {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1.5rem;
+  margin-top: 1rem;
+}
+.profile {
+  position: absolute;
+  top: 1.4rem;
+  right: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: center;
+}
+.loginReg {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.2rem;
+}
+.loginRegBtn {
+  color: white !important;
+  border-color: white !important;
+  flex: 1;
+}
+.loginLink {
+  color: #eee;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.loginLink:hover {
+  scale: 1.2;
+}
+
+.placeOrderBtn {
+  height: 2rem;
+  padding: 0 1.5rem;
+  border-radius: 0.5rem;
+  border: 0;
+  outline: 0;
+  font-weight: 700;
+  background: #c3d7ff;
+  cursor: pointer;
+  color: #222;
+  transition: all 0.15s ease;
+}
+.placeOrderBtn:hover {
+  transform: translateY(-3px);
+}
+.profileContainer {
+  background: white;
+  padding: 2rem 1rem;
+  width: 60%;
+  border-radius: 1rem;
+}
+.profileHead {
+  font-size: 1.3rem;
+  display: flex;
+  color: black;
+  justify-content: flex-start;
+  width: 100%;
+  font-weight: 500;
+  margin-bottom: 0.625rem;
+  padding-left: 1rem;
+}
+.profileForm {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1rem;
+  margin-top: 1.5rem;
+}
+.bookEditBtn {
+  width: 40%;
+  border: 1px solid;
+  outline: 0;
+  padding: 0.3rem 0;
+  background-color: transparent;
+  border-radius: 0.35rem;
+  color: rgb(26, 184, 26);
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.bookEditBtn:hover {
+  background: rgb(26, 184, 26);
+  border: 0;
+  color: white;
+}
+.bookDeleteBtn {
+  width: 40%;
+  border: 1px solid;
+  outline: 0;
+  padding: 0.3rem 0;
+  background-color: transparent;
+  border-radius: 0.35rem;
+  font-weight: bold;
+  color: rgb(212, 17, 17);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.bookDeleteBtn:hover {
+  background: rgb(212, 17, 17);
+  border: 0;
+  color: white;
+}
+.dialog_container {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow: visible;
+}
