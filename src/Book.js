@@ -70,7 +70,7 @@ const Book = () => {
       .min(10, "Price must be greater than 10"),
     category: Yup.string().required("Category must be seleted"),
     description: Yup.string()
-      .required("Desription cannot be empty")
+      .required("Desription cannot be empty::")
       .min(10, "Description must be of minimum 10 characters"),
     base64image: Yup.string().required("Cover page must be uploaded"),
   });
